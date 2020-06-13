@@ -26,4 +26,7 @@
       <button [disabled]="isBtnCadastroDisabled" (click)="submitForm()">Cadastrar</button>
     </div>
   </div>
+  <div class="response-container" *ngIf="response">
+    {{ response }}
+  </div>
 </div>
