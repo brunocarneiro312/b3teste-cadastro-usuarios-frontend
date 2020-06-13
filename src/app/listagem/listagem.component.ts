@@ -12,7 +12,7 @@ export class ListagemComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
 
-  usuarios: any[];
+  usuarios: any[] = [];
   page = 1;
   pageSize = 5;
   collectionSize = undefined;
@@ -37,10 +37,11 @@ export class ListagemComponent implements OnInit {
       });
   }
   excluir(userId) {
+    if (!confirm('Confirma a exclusão do usuário?')) {
+      return;
+    }
     this.http.delete(`./usuario/${userId}`)
       .subscribe(responseData => {
-        console.log('Usuário deletado');
-        console.log(responseData);
         this.listar();
       });
   }
