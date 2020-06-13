@@ -1,0 +1,11 @@
+#listagem-container {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 3px 10px #ddd;
+}
+#listagem-container .header {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=listagem.component.css.map */

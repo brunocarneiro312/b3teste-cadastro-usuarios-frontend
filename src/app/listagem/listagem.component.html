@@ -1,0 +1,33 @@
+<div id="listagem-container">
+  <div class="header">
+    Lista de Usuários Cadastrados
+  </div>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">UserId</th>
+      <th scope="col">CompanyId</th>
+      <th scope="col">Email</th>
+      <th scope="col">Birth Date</th>
+      <th scope="col">Ações</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let usuario of usuarios | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ usuario.userId }}</td>
+      <td>{{ usuario.companyId }}</td>
+      <td>{{ usuario.email }}</td>
+      <td>{{ usuario.birthdate }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="excluir(usuario.userId)">Excluir</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <ngb-pagination
+    [(page)]="page"
+    [pageSize]="pageSize"
+    [collectionSize]="usuarios.length"></ngb-pagination>
+</div>

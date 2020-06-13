@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ListagemComponent } from './listagem/listagem.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    HttpClientModule,
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
