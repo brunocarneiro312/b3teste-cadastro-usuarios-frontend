@@ -1,0 +1,37 @@
+#root-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+}
+#root-container header {
+  font-family: Verdana;
+  grid-area: header;
+}
+#root-container header .header-container {
+  padding: 15px;
+}
+#root-container header .header-container .brand {
+  font-size: 1.2em;
+}
+#root-container main {
+  font-family: Verdana;
+  grid-area: main;
+  background: #f5f5f5;
+}
+#root-container main .main-container {
+  padding: 15px;
+}
+#root-container footer {
+  font-family: Verdana;
+  grid-area: footer;
+  font-size: 0.8em;
+}
+#root-container footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=app.component.css.map */

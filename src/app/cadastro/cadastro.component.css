@@ -1,0 +1,70 @@
+#cadastro-container {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 3px 10px #ddd;
+}
+#cadastro-container .header {
+  font-size: 1.2em;
+}
+#cadastro-container .message {
+  padding: 15px;
+}
+#cadastro-container .message.success {
+  background: #00a200;
+  color: white;
+}
+#cadastro-container .message.error {
+  background: #df343a;
+  color: white;
+}
+#cadastro-container .form-container {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+}
+#cadastro-container .form-container .form-group {
+  padding: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+#cadastro-container .form-container .form-group label {
+  display: block;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+#cadastro-container .form-container .form-group input, #cadastro-container .form-container .form-group select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background-color: #ececec;
+  margin: 5px 0;
+  border-bottom: 2px solid #ececec;
+  transition: all 0.3s;
+}
+#cadastro-container .form-container .form-group input:focus, #cadastro-container .form-container .form-group select:focus {
+  outline: none;
+  border-bottom: 2px solid #3257bb;
+}
+#cadastro-container .form-container .form-group button {
+  padding: 10px 15px;
+  margin-right: 15px;
+  background-color: #3257bb;
+  color: white;
+  border: 0;
+  transition: all 0.3s;
+}
+#cadastro-container .form-container .form-group button.reset {
+  background-color: #ececec;
+  color: #6b6b6b;
+}
+#cadastro-container .form-container .form-group button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#cadastro-container .form-container .form-group button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=cadastro.component.css.map */

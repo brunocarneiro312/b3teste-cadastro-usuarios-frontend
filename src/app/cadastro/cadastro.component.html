@@ -1,0 +1,29 @@
+<div id="cadastro-container">
+  <div class="header">
+    Cadastro de Usuário
+  </div>
+  <div class="form-container">
+    <div class="form-group" *ngIf="isFormSubmited">
+      <div *ngIf="isFormSuccess" class="message success">Usuário cadastrado com sucesso!</div>
+      <div *ngIf="isFormError" class="message error">Erro ao cadastrar cliente</div>
+    </div>
+    <div class="form-group">
+      <label for="cadastro-select-companyid">Company Id</label>
+      <select name="companyid" id="cadastro-select-companyid" [(ngModel)]="requestForm.companyId">
+        <option *ngFor="let companyId of companyIdValues" [ngValue]="companyId">{{ companyId }}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cadastro-input-email">Email</label>
+      <input id="cadastro-input-email" type="email" name="email" [(ngModel)]="requestForm.email" />
+    </div>
+    <div class="form-group">
+      <label for="cadastro-input-birthdate">Birth Date</label>
+      <input id="cadastro-input-birthdate" type="text" name="birthdate" [(ngModel)]="requestForm.birthdate" />
+    </div>
+    <div class="form-group">
+      <button class="reset" (click)="limpar()">Limpar</button>
+      <button [disabled]="isBtnCadastroDisabled" (click)="submitForm()">Cadastrar</button>
+    </div>
+  </div>
+</div>
