@@ -38,7 +38,11 @@ export class CadastroComponent implements OnInit {
   }
 
   submitForm() {
-    this.http.post('./usuario/save', this.requestForm)
+    const day = this.requestForm.birthdate.toString().substring(0, 2);
+    const month = this.requestForm.birthdate.toString().substring(3, 5);
+    const year = this.requestForm.birthdate.toString().substring(6);
+    this.requestForm.birthdate = `${year}-${month}-${day}`;
+    this.http.post('./usuario', this.requestForm)
       .subscribe(responseData => {
         alert('usuário cadastrado com sucesso!');
         this.response = responseData;
