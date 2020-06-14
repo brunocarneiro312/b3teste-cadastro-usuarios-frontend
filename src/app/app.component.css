@@ -1,9 +1,9 @@
 #root-container {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header" "aside main main" "footer footer footer";
 }
 #root-container header {
   font-family: Verdana;
@@ -14,6 +14,10 @@
 }
 #root-container header .header-container .brand {
   font-size: 1.2em;
+}
+#root-container aside {
+  grid-area: aside;
+  padding: 15px;
 }
 #root-container main {
   font-family: Verdana;

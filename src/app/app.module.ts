@@ -10,23 +10,20 @@ import { ListagemComponent } from './listagem/listagem.component';
 import { HttpClientModule } from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
-
-const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'listagem', component: ListagemComponent},
-  {path: 'cadastro', component: CadastroComponent}
-];
+import { EmailSearchComponent } from './email-search/email-search.component';
+import { CompanyidSearchComponent } from './companyid-search/companyid-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastroComponent,
     ListagemComponent,
-    HomeComponent
+    HomeComponent,
+    EmailSearchComponent,
+    CompanyidSearchComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
     FormsModule,
     HttpClientModule,
     AppRoutingModule,

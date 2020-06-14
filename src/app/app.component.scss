@@ -1,11 +1,11 @@
 #root-container {
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto 1fr 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header header"
-    "main main main"
+    "aside main main"
     "footer footer footer";
 
   header {
@@ -19,6 +19,11 @@
         font-size: 1.2em;
       }
     }
+  }
+
+  aside {
+    grid-area: aside;
+    padding: 15px;
   }
 
   main {

@@ -1,0 +1,43 @@
+#email-search-container {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 3px 10px #ddd;
+  margin-bottom: 15px;
+}
+#email-search-container input, #email-search-container select {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border: 0;
+  background-color: #ececec;
+  margin: 5px 25px;
+  border-bottom: 2px solid #ececec;
+  transition: all 0.3s;
+}
+#email-search-container input:focus, #email-search-container select:focus {
+  outline: none;
+  border-bottom: 2px solid #3257bb;
+}
+#email-search-container button {
+  padding: 10px 15px;
+  margin-right: 15px;
+  background-color: #3257bb;
+  color: white;
+  border: 0;
+  transition: all 0.3s;
+}
+#email-search-container button.reset {
+  background-color: #ececec;
+  color: #6b6b6b;
+}
+#email-search-container button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#email-search-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=email-search.component.css.map */
