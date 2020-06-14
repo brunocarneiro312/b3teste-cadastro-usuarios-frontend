@@ -1,0 +1,9 @@
+<div id="send-file-container">
+  <div class="form-group">
+    <label for="send-input-file">Company Id</label>
+    <input id="send-input-file" type="file" name="file" (change)="handleFileInput($event.target.files)">
+    <button (click)="enviarArquivo()">
+      Enviar
+    </button>
+  </div>
+</div>

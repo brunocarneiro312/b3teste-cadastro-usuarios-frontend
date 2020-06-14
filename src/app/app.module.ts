@@ -12,6 +12,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { EmailSearchComponent } from './email-search/email-search.component';
 import { CompanyidSearchComponent } from './companyid-search/companyid-search.component';
+import { SendFileComponent } from './send-file/send-file.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CompanyidSearchComponent } from './companyid-search/companyid-search.co
     ListagemComponent,
     HomeComponent,
     EmailSearchComponent,
-    CompanyidSearchComponent
+    CompanyidSearchComponent,
+    SendFileComponent
   ],
   imports: [
     BrowserModule,

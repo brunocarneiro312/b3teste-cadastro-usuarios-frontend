@@ -1,0 +1,43 @@
+#send-file-container {
+  border: 1px solid #ddd;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 3px 10px #ddd;
+  margin-bottom: 15px;
+}
+#send-file-container input, #send-file-container select {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border: 0;
+  background-color: #ececec;
+  margin: 5px 25px;
+  border-bottom: 2px solid #ececec;
+  transition: all 0.3s;
+}
+#send-file-container input:focus, #send-file-container select:focus {
+  outline: none;
+  border-bottom: 2px solid #3257bb;
+}
+#send-file-container button {
+  padding: 10px 15px;
+  margin-right: 15px;
+  background-color: #3257bb;
+  color: white;
+  border: 0;
+  transition: all 0.3s;
+}
+#send-file-container button.reset {
+  background-color: #ececec;
+  color: #6b6b6b;
+}
+#send-file-container button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#send-file-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=send-file.component.css.map */
